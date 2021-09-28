@@ -1,6 +1,6 @@
 {
   "name": "fivem-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small package in order to interact with FiveM API",
   "main": "index.js",
   "scripts": {
