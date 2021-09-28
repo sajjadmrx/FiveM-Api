@@ -6,7 +6,7 @@ const options = {
 
 }
 
-class mehtods {
+class methods {
 
     async request(ip, file) {
         const url = this.getUrl(ip, file);
@@ -38,4 +38,4 @@ class mehtods {
 }
 
 
-module.exports = new mehtods();
+module.exports = new methods();

@@ -1,5 +1,5 @@
 
-const mehtods = require('./mehtods');
+const methods = require('./methods');
 
 class fivemApi {
 
@@ -22,7 +22,7 @@ class fivemApi {
 
     async getAllInfo() {
 
-        const data = await mehtods.request(this.ip, 'info.json')
+        const data = await methods.request(this.ip, 'info.json')
         if (data)
             data.urlConnection = this.getUrlConnection() // add url connection
         return data // return object
@@ -30,7 +30,7 @@ class fivemApi {
     }
 
     getUrlConnection() {
-        return `https://fivem://connect/${mehtods.getIp(this.ip)}`
+        return `https://fivem://connect/${methods.getIp(this.ip)}`
     }
 
     async getName() {
@@ -65,7 +65,7 @@ class fivemApi {
     //- players
 
     async getPlayers() {
-        const data = await mehtods.request(this.ip, 'players.json')
+        const data = await methods.request(this.ip, 'players.json')
         return data // return array
     }
 
